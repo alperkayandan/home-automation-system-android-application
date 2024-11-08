@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/main_btn_motor"
+        android:layout_width="105dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="68dp"
+        android:text="Aç/Kapa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSwitch" />
+
+    <TextView
+        android:id="@+id/mainTxtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="24dp"
+        android:text="Ev Otomasyon Sistemi"
+        app:layout_constraintEnd_toEndOf="@+id/mainSwitch"
+        app:layout_constraintStart_toStartOf="@+id/mainSwitch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainTxtSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="276dp"
+        android:text="Hız:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSwitch" />
+
+    <TextView
+        android:id="@+id/mainTxtValueOfSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/mainTxtSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/mainTxtSpeed" />
+
+    <TextView
+        android:id="@+id/mainTxtLed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="384dp"
+        android:text="Led Rengi:"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSwitch" />
+
+    <TextView
+        android:id="@+id/mainTxtValueOfColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/mainTxtLed"
+        app:layout_constraintTop_toBottomOf="@+id/mainTxtLed" />
+
+    <TextView
+        android:id="@+id/mainTxtHeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="52dp"
+        android:text="Sıcaklık:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSwitch" />
+
+    <TextView
+        android:id="@+id/mainTxtValueOfHeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/mainTxtHeat"
+        app:layout_constraintTop_toBottomOf="@+id/mainTxtHeat" />
+
+    <Switch
+        android:id="@+id/mainSwitch"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="80dp"
+        android:scrollbarSize="24dp"
+        android:showText="true"
+        android:text="System"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTxtTitle" />
+
+    <TextView
+        android:id="@+id/mainTxtMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/main_btn_motor"
+        app:layout_constraintStart_toStartOf="@+id/main_btn_motor"
+        app:layout_constraintTop_toBottomOf="@+id/main_btn_motor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
