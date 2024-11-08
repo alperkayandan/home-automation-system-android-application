@@ -2,3 +2,5 @@
 **This project is an Android application for a project I completed in my third year at University, where I was able to control a small electronic circuit from anywhere, regardless of location.**
 ## Details of Project
 In this project, data is sent to the `Firebase database` over the internet according to the buttons pressed in the application.and similarly, the data coming from the electronic circuit is displayed on the application screen through the database.
+## Test Image on Real Device
+![Error](https://github.com/alperkayandan/home-automation-system-android-application/blob/master/Images/test_pic.png)
